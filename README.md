@@ -42,9 +42,6 @@ A guide on how to update your vendor tree blobs from stock ROM
   ```
   bash extract-files.sh /path/directory/to/your/rom_dump/
   ```
-
-  ```
-  ```
   - if you use paython script then do this:
   - define tool path PYTHONPATH=../../../tools/extract-utils python3
   ```
