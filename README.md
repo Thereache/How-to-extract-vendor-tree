@@ -26,7 +26,8 @@ A guide on how to update your vendor tree blobs from stock ROM
 ```
  - Clone or Copy/Move your Existing Device Tree inside device/vendorname/codename directory if not already cloned.
     - If you don't have yet, use aosptdtgen to generate device tree.
- - Directory should be look like this:
+### For .sh script 
+ - Directory should be look like this: for sh script 
  ```
     - rom_source/
         - device/
@@ -42,10 +43,24 @@ A guide on how to update your vendor tree blobs from stock ROM
   ```
   bash extract-files.sh /path/directory/to/your/rom_dump/
   ```
+### For .py script 
+ - Directory should be look like this: for python script showing on mine like this 🤷 why
+ ```
+    - rom_source/
+        - android/
+            - tools/
+                - extract-utils/
+            - prebuilts/
+                - extract-tools/
+            - device/
+                - vendorname/
+                   - devicecodename/
+  ```
   - if you use paython script then do this:
   - define tool path PYTHONPATH=../../../tools/extract-utils python3
   ```
   python extract-files.py /path/directory/to/your/rom_dump/
   ```
-- Wait until finished. You'll find the blobs under android/vendor/vendorname/codename
-    
+
+
+- Wait until finished. You'll find the blobs under android/vendor/vendorname/codename   
