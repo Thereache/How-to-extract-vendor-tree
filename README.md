@@ -41,21 +41,10 @@ A guide on how to update your vendor tree blobs from stock ROM
   ```
   - Inside you device tree folder, run:
   ```
-  bash extract-files.sh /path/directory/to/your/rom_dump/
+  ./extract-files.sh /path/directory/to/your/rom_dump/
   ```
 ### For .py script 
- - Directory should be look like this: for python script showing on mine like this 🤷 why
- ```
-    - rom_source/
-        - android/
-            - tools/
-                - extract-utils/
-            - prebuilts/
-                - extract-tools/
-        - device/
-            - vendorname/
-                - devicecodename/
-  ```
+  - same structure as above of path 
   - if you use paython script then do this:
   - define tool path PYTHONPATH=../../../tools/extract-utils
   ```
