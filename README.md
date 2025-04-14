@@ -52,14 +52,15 @@ A guide on how to update your vendor tree blobs from stock ROM
                 - extract-utils/
             - prebuilts/
                 - extract-tools/
-            - device/
-                - vendorname/
-                   - devicecodename/
+        - device/
+            - vendorname/
+                - devicecodename/
   ```
   - if you use paython script then do this:
-  - define tool path PYTHONPATH=../../../tools/extract-utils python3
+  - define tool path PYTHONPATH=../../../tools/extract-utils
   ```
-  python extract-files.py /path/directory/to/your/rom_dump/
+  chmod a+x extract-files.py
+  ./extract-files.sh /home/mayuru02/d/out
   ```
 
 
