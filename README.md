@@ -21,8 +21,8 @@ A guide on how to update your vendor tree blobs from stock ROM
 - Change directory to the rom source
 - Clone neccessary tools/scripts inside the rom source directory - most lineage based roms have these two repos cloned already:
 ```
-     git clone https://github.com/LineageOS/android_tools_extract-utils -b lineage-22.2 android/tools/extract-utils
-     git clone https://github.com/LineageOS/android_prebuilts_extract-tools -b lineage-22.2 android/prebuilts/extract-tools
+     git clone https://github.com/LineageOS/android_tools_extract-utils -b lineage-23.0 android/tools/extract-utils
+     git clone https://github.com/LineageOS/android_prebuilts_extract-tools -b lineage-23.0 android/prebuilts/extract-tools
 ```
  - Clone or Copy/Move your Existing Device Tree inside device/vendorname/codename directory if not already cloned.
     - If you don't have yet, use aosptdtgen to generate device tree.
@@ -49,7 +49,7 @@ A guide on how to update your vendor tree blobs from stock ROM
   - define tool path PYTHONPATH=../../../tools/extract-utils
   ```
   chmod a+x extract-files.py
-  ./extract-files.sh /home/mayuru02/d/out
+  ./extract-files.sh /home/xxxxxx/d/out
   ```
 
 
